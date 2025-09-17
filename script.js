@@ -62,11 +62,11 @@ $('#menu-toggle').on('click', function() {
 });
 
 $('#sample-json').on('click', () => {
-    $('#json-input').val('{"name":"John","age":30,"city":"New York"}').trigger('input');
+    $('#json-input').val('{"Name":"Sowndhar","age":20,"city":"Coimbatore","ProjectName":"TreeViewer"}').trigger('input');
 });
 
 $('#sample-xml').on('click', () => {
-    $('#json-input').val('<person><name>John</name><age>30</age><city>New York</city></person>').trigger('input');
+    $('#json-input').val('<person><name>Sowndhar</name><age>20</age><city>Coimbatore</city></person><ProjectName>Treeviewer</>').trigger('input');
 });
 
 let debounceTimer = null;
