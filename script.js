@@ -66,7 +66,7 @@ $('#sample-json').on('click', () => {
 });
 
 $('#sample-xml').on('click', () => {
-    $('#json-input').val('<person><name>Sowndhar</name><age>20</age><city>Coimbatore</city></person><ProjectName>Treeviewer</ProjectName>').trigger('input');
+    $('#json-input').val('<person><name>Sowndhar</name><age>20</age><city>Coimbatore</city><ProjectName>Treeviewer</ProjectName></person>').trigger('input');
 });
 
 let debounceTimer = null;
