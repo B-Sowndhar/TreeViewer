@@ -11,7 +11,6 @@ A web-based application that allows you to visualize JSON and XML data in a tree
 - Download the generated tree structure as a `.txt` file
 - Sample JSON and XML data for quick testing
 - Responsive design with a mobile-friendly menu
-- helloda thambiii
 
 ## ⚡ Usage
 
