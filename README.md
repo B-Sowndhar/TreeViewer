@@ -46,5 +46,5 @@ TreeFormatter
 - jQuery
 - jsTree plugin
 
-## ## 📄Licence
-It is open source and free to use
+##  📄Licence
+It is open source and free to use.
