@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tree Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default-dark/style.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="brand" style="font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif; font-size: 24px;">TREE VIEWER</div>
+        <button id="menu-toggle">☰ MENU</button>
+        <div class="nav-controls">
+            <input type="text" id="search-node" placeholder="Search Node..." />
+            <select id="view-select">
+                <option value="json">JSON Tree Viewer</option>
+                <option value="xml">XML Tree Viewer</option>
+            </select>
+            <label class="toggle">
+                <span class="label">Dark Theme</span>
+                <input type="checkbox" id="theme-toggle" checked>
+            </label>
+            <button id="download-btn">Download Tree</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="panel">
+            <div class="panel-header">
+                <div style="font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif">INPUT</div>
+                <div>
+                    <button id="sample-json">Sample JSON</button>
+                    <button id="sample-xml">Sample XML</button>
+                </div>
+            </div>
+            <textarea id="json-input" placeholder="Paste JSON or XML here..."></textarea>
+        </section>
+        <section class="panel">
+            <div class="panel-header">
+                <div style="font-weight: bold; font-family: 'Arial Black', Gadget, sans-serif">TREE</div>
+                <div>
+                    <button id="expand-all">Expand</button>
+                    <button id="collapse-all">Collapse</button>
+                </div>
+            </div>
+            <div id="tree-container"></div>
+        </section>
+    </div>
+
+    <div id="notification">Invalid input format!</div>
+    <div id="format-status">⚠️ No input yet</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
